@@ -1,7 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
     margin: 0;
-    font-family: 'Andada Pro', serif;
-  }
-  body{
-  background-color: blue;
-  }
+    font-family: "Andada Pro", serif;
+}
+/* body {
+} */
