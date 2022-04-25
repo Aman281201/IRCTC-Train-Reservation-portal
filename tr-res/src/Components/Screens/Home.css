@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+}
+
+/* .booking-card{
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    width: fill;
+    height: 200%;
+} */
+
+.advertisement{
+    display: flex;
+    flex-direction: row;
+    width: fill;
+}
+
+.frm{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 2000px;
+}
+
+.image{
+    width: 50%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.take-input{
+    border: 10px solid black ;
+}
+
+
