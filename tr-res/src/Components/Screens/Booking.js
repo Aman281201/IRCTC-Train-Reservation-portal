@@ -40,8 +40,8 @@ const Booking = ({ props }) => {
                     justifyContent: "space-around",
                 }}
             >
-                <div>
-                    <select>
+                <div className="grid align-items-center">
+                    <select className="px-[5px] w-[150px] rounded-md">
                         {stationData !== [] &&
                             stationData.map((e) => {
                                 // return(({startStation}===e)?(<option value={e} selected disabled>{e}</option>) :(<option value={e}>{e}</option>));
@@ -50,15 +50,15 @@ const Booking = ({ props }) => {
                     </select>
                 </div>
                 <div
-                    className="bg-stone-50 rounded-full h-[35px] w-[35px] grid justify-items-center"
+                    className="bg-stone-50 rounded-full h-[35px] w-[35px] pt-[5px] grid align-items-center justify-items-center"
                     onClick={() => {
                         // reverseHandler();
                     }}
                 >
                     <CompareArrowsIcon />
                 </div>
-                <div>
-                    <select>
+                <div className="grid align-items-center">
+                    <select className="px-[5px] w-[150px] rounded-md">
                         {stationData !== [] &&
                             stationData.map((e) => {
                                 // return(({endStation}===e)?(<option value={e} selected disabled>{e}</option>) :(<option value={e}>{e}</option>));
@@ -66,8 +66,11 @@ const Booking = ({ props }) => {
                             })}
                     </select>
                 </div>
-                <div>
-                    <input placeholder="date time picker" />
+                <div className="grid align-items-center">
+                    <input
+                        className="px-[5px] rounded-md w-[150px]"
+                        placeholder="date time picker"
+                    />
                 </div>
                 <div>
                     <Button variant="contained">Search</Button>
