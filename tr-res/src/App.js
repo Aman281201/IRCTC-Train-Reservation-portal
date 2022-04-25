@@ -5,8 +5,8 @@ import Booking from "./Components/Screens/Booking";
 function App() {
     return (
         <div className="App">
-            {/* <Home /> */}
-            <Booking />
+            <Home />
+            {/* <Booking /> */}
         </div>
     );
 }
