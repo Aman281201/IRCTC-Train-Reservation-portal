@@ -29,6 +29,7 @@ const Home = () => {
     console.log(date);
 
     return (
+<<<<<<< HEAD:tr-res/src/Components/Screens/Home.js
         <div className="container">
             <div className="frm">
                 <form>
@@ -83,6 +84,10 @@ const Home = () => {
                     alt=""
                 />
             </div>
+=======
+        <div>
+
+>>>>>>> c496952e41d3f5f1f3f4b724a596a101ae2d72e1:tr-res/src/Components/Screens/Home.jsx
         </div>
     );
 };
