@@ -6,8 +6,7 @@ import Booking from "./Booking";
 const Home = () => {
     return (
         <div>
-            {/* <Booking /> */}
-            {/* <Navbar /> */}
+
         </div>
     );
 };
