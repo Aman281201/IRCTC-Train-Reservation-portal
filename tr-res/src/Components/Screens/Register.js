@@ -18,6 +18,7 @@ const Register = () => {
     const [state, setState] = React.useState("");
     const [pin, setPin] = React.useState("");
     const [gender, setGender] = React.useState("male");
+    const [nationality, setNationality] = React.useState("Indian");
 
     const Postdata = () => {
         fetch("/signup", {
@@ -181,14 +182,27 @@ const Register = () => {
                             <section class="light">
                                 <h1>Nationality</h1>
 
-                                <label className="gender">
-                                    <input type="radio" name="light" checked />
+                                <label className="Indian">
+                                    <input
+                                        type="radio"
+                                        name="light"
+                                        checked
+                                        onClick={() => {
+                                            setNationality("Indian");
+                                        }}
+                                    />
                                     <span class="design"></span>
                                     <span class="text">Indian</span>
                                 </label>
 
-                                <label className="gender">
-                                    <input type="radio" name="light" />
+                                <label className="Other">
+                                    <input
+                                        type="radio"
+                                        name="light"
+                                        onClick={() => {
+                                            setNationality("Other");
+                                        }}
+                                    />
                                     <span class="design"></span>
                                     <span class="text">Other</span>
                                 </label>
