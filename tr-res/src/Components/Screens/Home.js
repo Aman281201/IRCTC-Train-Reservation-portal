@@ -20,6 +20,20 @@ const Home = () => {
             });
     }, []);
 
+    const buttonHandler = () => {
+    fetch("/fromatob",{
+        method:"post",
+        headers:{
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify({
+            pickup,
+            destination,
+            date
+        }),
+    
+    }).then((res)=> res.json()).then((result) => {console.log(result)})
+    }
     const [stationData, setStationData] = useState([]);
     const [pickup, changePickup] = useState("");
     const [destination, changeDestination] = useState("");
@@ -65,9 +79,11 @@ const Home = () => {
                         <Link to="/booking">
                             <button
                                 type="submit"
-                                // onClick={() => {
-                                //     buttonHandler();
-                                // }}
+                                onClick={() => {
+                                    console.log("abinn")
+                                    buttonHandler();
+                                }}
+                                
                             >
                                 submit
                             </button>
