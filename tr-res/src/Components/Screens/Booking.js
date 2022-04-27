@@ -58,7 +58,7 @@ const Booking = ({ props }) => {
                     <CompareArrowsIcon />
                 </div>
                 <div className="grid align-items-center">
-                    <select className="px-[5px] w-[150px] rounded-md">
+                    <select className="px-[5px] w-[150px] rounded-md bg-stone-50">
                         {stationData !== [] &&
                             stationData.map((e) => {
                                 // return(({endStation}===e)?(<option value={e} selected disabled>{e}</option>) :(<option value={e}>{e}</option>));
