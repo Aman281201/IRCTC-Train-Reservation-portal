@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import "./Booking.css";
 import Button from "@mui/material/Button";
+import DatePicker from "react-datepicker";
 
 const Booking = ({ props }) => {
     const [stationData, setStationData] = useState(["delhi", "mumbai", "pune"]);
@@ -58,7 +59,7 @@ const Booking = ({ props }) => {
                     <CompareArrowsIcon />
                 </div>
                 <div className="grid align-items-center">
-                    <select className="px-[5px] w-[150px] rounded-md bg-stone-50">
+                    <select className="px-[5px] w-[150px] rounded-md">
                         {stationData !== [] &&
                             stationData.map((e) => {
                                 // return(({endStation}===e)?(<option value={e} selected disabled>{e}</option>) :(<option value={e}>{e}</option>));
@@ -67,10 +68,8 @@ const Booking = ({ props }) => {
                     </select>
                 </div>
                 <div className="grid align-items-center">
-                    <input
-                        className="px-[5px] rounded-md w-[150px]"
-                        placeholder="date time picker"
-                    />
+                    <label for="dob">Date of Birth: </label>
+                    <DatePicker id="dob" />
                 </div>
                 <div>
                     <Button variant="contained">Search</Button>
