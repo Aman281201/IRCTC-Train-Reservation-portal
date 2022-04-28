@@ -9,7 +9,7 @@ import Log from "./Login.css";
 
 
 const Login = () => {
-  const [user, setUser] = useState("");
+  const [uName, setUser] = useState("");
   const [pass, setPassword] = useState("");
   const { state, dispatch } = useContext(UserContext);
   const navigate = useNavigate();
@@ -77,7 +77,7 @@ const Login = () => {
               <input
                 value={uName}
                 onChange={(e) => {
-                  setUsername(e.target.value);
+                  setUser(e.target.value);
                 }}
                 id="email-address"
                 name="email"
