@@ -1,3 +1,4 @@
+
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../App";
@@ -6,8 +7,9 @@ import RadioGroup from "@mui/material/RadioGroup";
 import Alert from "@mui/material/Alert";
 import Log from "./Login.css";
 
+
 const Login = () => {
-  const [uName, setUsername] = useState("");
+  const [user, setUser] = useState("");
   const [pass, setPassword] = useState("");
   const { state, dispatch } = useContext(UserContext);
   const navigate = useNavigate();
@@ -136,5 +138,6 @@ const Login = () => {
     </div>
   );
 };
+
 
 export default Login;
