@@ -9,7 +9,9 @@ import AddRoute from './Components/Screens/Route';
 
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
 import Passenger from "./Components/Screens/Passenger";
+
 
 import Train from "./Components/Screens/Train";
 import AdminLogin from "./Components/Screens/AdminLogin";
@@ -35,6 +37,7 @@ const Routing = () => {
 
   return (
     <div className="App">
+      <Navbar />
       <Routes>
 
         {/* <Route exact path="/login">{<Login />}</Route> */}
@@ -44,8 +47,6 @@ const Routing = () => {
         <Route exact path="/login" element={<Register />} />
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/train" element={<Train />} />
-
-
       </Routes>
     </div>
   );
@@ -80,6 +81,5 @@ function App() {
 // //         </Router>
 //     );
 // >>>>>>> master
-
 
 export default App;

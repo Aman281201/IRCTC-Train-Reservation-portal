@@ -20,6 +20,7 @@ const Register = () => {
   const [pin, setPin] = React.useState("");
   const [gender, setGender] = React.useState("male");
   const [nationality, setNationality] = React.useState("Indian");
+  const [date, setDate] = React.useState("");
 
   const Postdata = () => {
     fetch("/signup", {
@@ -90,7 +91,7 @@ const Register = () => {
                 id="FirstName"
                 required
                 onChange={(e) => {
-                  setFname(e.target.value());
+                  setFname(e.target.value);
                 }}
                 value={fname}
               />
@@ -101,7 +102,7 @@ const Register = () => {
                 type="text"
                 id="MiddleName"
                 onChange={(e) => {
-                  setMname(e.target.value());
+                  setMname(e.target.value);
                 }}
                 value={mname}
               />
@@ -112,17 +113,25 @@ const Register = () => {
                 type="text"
                 id="LastName"
                 onChange={(e) => {
-                  setLname(e.target.value());
+                  setLname(e.target.value);
                 }}
                 value={lname}
               />
             </li>
 
             <li>
-              <label for="dob">Date of Birth: </label>
-              <DatePicker id="dob" onChange={(event)=>{
-                setDateOfBirth(event.target.value)
-              }}/>
+
+              <label for="dob">Date of Birth:(yyyy-mm-dd) </label>
+              <input
+                type="text"
+                id="LastName"
+                onChange={(e) => {
+                  setDate(e.target.value);
+                }}
+                value={date}
+              />
+              {/* <DatePicker id="dob" /> */}
+
             </li>
 
             <li>
@@ -163,9 +172,23 @@ const Register = () => {
                 id="Language"
                 required
                 onChange={(e) => {
-                  setLang(e.target.value());
+                  setLang(e.target.value);
                 }}
                 value={lang}
+              />
+            </li>
+
+            <li>
+
+              <label for="phno">Phone Number</label>
+              <input
+                type="text"
+                id="phno"
+                required
+                onChange={(e) => {
+                  setPhno(e.target.value);
+                }}
+                value={phno}
               />
             </li>
 
@@ -223,7 +246,7 @@ const Register = () => {
                 id="username"
                 required
                 onChange={(e) => {
-                  setUser(e.target.value());
+                  setUser(e.target.value);
                 }}
                 value={user}
               />
@@ -235,7 +258,7 @@ const Register = () => {
                 id="email"
                 required
                 onChange={(e) => {
-                  setEmail(e.target.value());
+                  setEmail(e.target.value);
                 }}
                 value={email}
               />
@@ -251,7 +274,7 @@ const Register = () => {
                 id="confirmPassword"
                 required
                 onChange={(e) => {
-                  setPass(e.target.value());
+                  setPass(e.target.value);
                 }}
                 value={Pass}
               />
@@ -266,7 +289,7 @@ const Register = () => {
                 id="ALine"
                 required
                 onChange={(e) => {
-                  setAline(e.target.value());
+                  setAline(e.target.value);
                 }}
                 value={address}
               />
@@ -278,7 +301,7 @@ const Register = () => {
                 id="city"
                 required
                 onChange={(e) => {
-                  setCity(e.target.value());
+                  setCity(e.target.value);
                 }}
                 value={city}
               />
@@ -290,7 +313,7 @@ const Register = () => {
                 id="State"
                 required
                 onChange={(e) => {
-                  setState(e.target.value());
+                  setState(e.target.value);
                 }}
                 value={state}
               />
@@ -302,28 +325,52 @@ const Register = () => {
                 id="Pincode"
                 required
                 onChange={(e) => {
-                  setPin(e.target.value());
+                  setPin(e.target.value);
                 }}
                 value={pin}
               />
             </li>
           </ul>
         </fieldset>
+
         <button
+          type="submit"
+          class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           onClick={() => {
             Postdata();
           }}
         >
-          Submit
+          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+            <svg
+              class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+          Register
         </button>
         <br></br>
-        <button
+        {/* <button
           className="submitButton"
           type="button"
           onClick={() => this.changeView("logIn")}
         >
           Have an Account?
-        </button>
+        </button> */}
+
+        <Link to="/login">
+          <div className="text-[#3282B8] text-center py-[20px]">
+            click here for login
+          </div>
+        </Link>
       </form>
     </div>
   );
