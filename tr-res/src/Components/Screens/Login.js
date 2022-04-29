@@ -1,4 +1,3 @@
-
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../App";
@@ -6,7 +5,6 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import Alert from "@mui/material/Alert";
 import Log from "./Login.css";
-
 
 const Login = () => {
   const [uName, setUser] = useState("");
@@ -30,11 +28,12 @@ const Login = () => {
         console.log(data);
         if (data.error) {
           // M.toast({ html: data.error, classes: "#d32f2f red darken-2" });
-          return (
-            <Alert variant="filled" severity="error">
-              {{ html: data.error }}
-            </Alert>
-          );
+          return;
+          // (
+          // <Alert variant="filled" severity="error">
+          //   {data.error}
+          // </Alert>
+          //);
         } else {
           localStorage.setItem("jwt", data.token);
           localStorage.setItem("user", JSON.stringify(data.token));
@@ -42,7 +41,7 @@ const Login = () => {
           navigate("/");
           return (
             <Alert variant="filled" severity="error">
-              {{ html: data.error }}
+              {data.error}
             </Alert>
             // {{history.push("/")}}
           );
@@ -134,10 +133,14 @@ const Login = () => {
             </button>
           </div>
         </form>
+        <Link to="/signup">
+          <div className="text-[#3282B8] text-center py-[20px]">
+            click here to register
+          </div>
+        </Link>
       </div>
     </div>
   );
 };
-
 
 export default Login;
