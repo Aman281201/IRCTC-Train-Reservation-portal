@@ -5,6 +5,7 @@ import DatePicker from "react-datepicker";
 
 const Register = () => {
   const navigate = useNavigate();
+  const [dob,setDateOfBirth] = React.useState("")
   const [fname, setFname] = React.useState("");
   const [mname, setMname] = React.useState("");
   const [lname, setLname] = React.useState("");
@@ -39,6 +40,7 @@ const Register = () => {
         city,
         state,
         pin,
+        dob
       }),
     })
       .then((res) => res.json())
@@ -79,7 +81,7 @@ const Register = () => {
     <div className="container">
       <form>
         <fieldset>
-          <legend className="bund">Create Account</legend>
+        <h1>CREATE ACCOUNT</h1>
           <ul>
             <li>
               <label for="Firstname">FirstName: </label>
@@ -118,7 +120,9 @@ const Register = () => {
 
             <li>
               <label for="dob">Date of Birth: </label>
-              <DatePicker id="dob" />
+              <DatePicker id="dob" onChange={(event)=>{
+                setDateOfBirth(event.target.value)
+              }}/>
             </li>
 
             <li>
@@ -166,6 +170,38 @@ const Register = () => {
             </li>
 
             <li>
+              <section class="light">
+                <h1>NATIONALITY</h1>
+
+                <label className="gender">
+                  <input
+                    type="radio"
+                    name="nat"
+                    checked
+                    onClick={() => {
+                      setNationality("Indian");
+                    }}
+                  />
+                  <span class="design"></span>
+                  <span class="text">Indian</span>
+                </label>
+
+                <label className="gender">
+                  <input
+                    type="radio"
+                    name="nat"
+                    onClick={() => {
+                      setNationality("Other");
+                    }}
+                  />
+                  <span class="design"></span>
+                  <span class="text">Other</span>
+                </label>
+              </section>
+            </li>
+
+
+            <li>
               <label for="phno">Phone Number</label>
               <input
                 type="text"
@@ -178,36 +214,7 @@ const Register = () => {
               />
             </li>
 
-            <li>
-              <section class="light">
-                <h1>Nationality</h1>
-
-                <label className="Indian">
-                  <input
-                    type="radio"
-                    name="light"
-                    checked
-                    onClick={() => {
-                      setNationality("Indian");
-                    }}
-                  />
-                  <span class="design"></span>
-                  <span class="text">Indian</span>
-                </label>
-
-                <label className="Other">
-                  <input
-                    type="radio"
-                    name="light"
-                    onClick={() => {
-                      setNationality("Other");
-                    }}
-                  />
-                  <span class="design"></span>
-                  <span class="text">Other</span>
-                </label>
-              </section>
-            </li>
+          
 
             <li>
               <label for="username">Username:</label>
