@@ -13,38 +13,38 @@ ARSH GUPTA, AMAN KUMAR, PRIYANSHU, ABHINN YADAV
 
 ### Background Info
 
-(1) One of the primary and most famous forms of transportation in today’s world is railways.
+#### (1) One of the primary and most famous forms of transportation in today’s world is railways.
 
-(2) Some of the reasons for its popularity is the low cost, the comfort and quality of travel and less time taken for travel.
+#### (2) Some of the reasons for its popularity is the low cost, the comfort and quality of travel and less time taken for travel.
 
-(3) India alone has a railway network with about 22,000 trains and a daily passenger of approximately 24 millions. This shows that railways are extremely for people to travel and hence calls for a systematic and well maintained database for its upkeep and growth.
+#### (3) India alone has a railway network with about 22,000 trains and a daily passenger of approximately 24 millions. This shows that railways are extremely for people to travel and hence calls for a systematic and well maintained database for its upkeep and growth.
 
-(4) We have tried our level best to design a database which logically satisfies the need for a railway management system.
+#### (4) We have tried our level best to design a database which logically satisfies the need for a railway management system.
 
-(5) We have created a web application for our database which implements authentication and provides the users and the admin the best environment which suits their needs and helps them do their respective tasks.
+#### (5) We have created a web application for our database which implements authentication and provides the users and the admin the best environment which suits their needs and helps them do their respective tasks.
 
 
 ### STAKEHOLDERS
 
-1. The stakeholders or the people which will be affected by this application will be the people who are willing to travel by train.
+#### 1. The stakeholders or the people which will be affected by this application will be the people who are willing to travel by train.
    
-2. This will also affect the people working in train stations, ticket collectors, train drivers and train station officials.
+#### 2. This will also affect the people working in train stations, ticket collectors, train drivers and train station officials.
    
 
 ### Features
 
-(1) USER SIDE:-
+#### (1) USER SIDE:-
 
-  (a) If the user has never signed up for the application then he/she can sign up to our portal.
+##### (a) If the user has never signed up for the application then he/she can sign up to our portal.
   
-  (b) If the user has registered his username and password once then he does not need to register again and again and he can have access to all the features that we provide to the user.
+##### (b) If the user has registered his username and password once then he does not need to register again and again and he can have access to all the features that we provide to the user.
   
-  (c) After signing in the user has the option to select the route for which he wants to book the ticket. The user has the option to enter a starting station, a destination station and the date on which he wishes to travel.
+##### (c) After signing in the user has the option to select the route for which he wants to book the ticket. The user has the option to enter a starting station, a destination station and the date on which he wishes to travel.
   
   (d) After submitting the response the user gets redirected to a page which displays all the trains which will make the travel according to the information provided by the user. The user has the option to book any of the available trains.
   
     
-(2) ADMIN SIDE:-
+#### (2) ADMIN SIDE:-
 
   Once the admin logs into the application then he will be displayed a page in which he will have the following options:-
   
