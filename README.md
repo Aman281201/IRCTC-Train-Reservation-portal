@@ -14,44 +14,75 @@ ARSH GUPTA, AMAN KUMAR, PRIYANSHU, ABHINN YADAV
 ### Background Info
 
 (1) One of the primary and most famous forms of transportation in today’s world is railways.
+
 (2) Some of the reasons for its popularity is the low cost, the comfort and quality of travel and less time taken for travel.
+
 (3) India alone has a railway network with about 22,000 trains and a daily passenger of approximately 24 millions. This shows that railways are extremely for people to travel and hence calls for a systematic and well maintained database for its upkeep and growth.
+
 (4) We have tried our level best to design a database which logically satisfies the need for a railway management system.
+
 (5) We have created a web application for our database which implements authentication and provides the users and the admin the best environment which suits their needs and helps them do their respective tasks.
+
 
 ### STAKEHOLDERS
 
 1. The stakeholders or the people which will be affected by this application will be the people who are willing to travel by train.
+   
 2. This will also affect the people working in train stations, ticket collectors, train drivers and train station officials.
+   
 
 ### Features
 
 (1) USER SIDE:-
+
   (a) If the user has never signed up for the application then he/she can sign up to our portal.
+  
   (b) If the user has registered his username and password once then he does not need to register again and again and he can have access to all the features that we provide to the user.
+  
   (c) After signing in the user has the option to select the route for which he wants to book the ticket. The user has the option to enter a starting station, a destination station and the date on which he wishes to travel.
+  
   (d) After submitting the response the user gets redirected to a page which displays all the trains which will make the travel according to the information provided by the user. The user has the option to book any of the available trains.
+  
     
 (2) ADMIN SIDE:-
+
   Once the admin logs into the application then he will be displayed a page in which he will have the following options:-
+  
   (1) Add Route into Train Network
+  
   (2) Add New Trains into Train Network
+  
   (3) Display all the Passengers traveling in a particular Train (4)Sort all the stations in lexicographical order
+  
 
 ### Database Features
+
 1.Implemented Views, Grants, Indexing and Triggers in Database, for more info Please check .sql files with respective names.
+
 2.Implemented PL-SQL queries in Backend
+
 3. Other Queries-
+   
 (1) new user signup
+
 (2) book tickets
+
 (3) cancel tickets
+
 (4) trains available on a specific date which have a specific departure and arrival location
+
 (5) we have also made a query which will update the seats available once a person reaches his arrival location and a new person can book a seat at this station
+
 (6) check the available seats in a class in a train
+
 (7) calculating the cost for a particular route
+
 (8) check the ticket status
+
 (9) show the booked tickets by a particular user
+
 (10) show passenger list of a particular train
+
 
 
 ### ER Formulation
