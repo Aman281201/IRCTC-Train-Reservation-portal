@@ -35,25 +35,25 @@ ARSH GUPTA, AMAN KUMAR, PRIYANSHU, ABHINN YADAV
 
 #### (1) USER SIDE:-
 
-   i. If the user has never signed up for the application then he/she can sign up to our portal.
-     
-   ii. If the user has registered his username and password once then he does not need to register again and again and he can have access to all the features that we provide to the user.
-     
-   iii. After signing in the user has the option to select the route for which he wants to book the ticket. The user has the option to enter a starting station, a destination station and the date on which he wishes to travel.
-     
-   iv. After submitting the response the user gets redirected to a page which displays all the trains which will make the travel according to the information provided by the user. The user has the option to book any of the available trains.
+      i. If the user has never signed up for the application then he/she can sign up to our portal.
+        
+      ii. If the user has registered his username and password once then he does not need to register again and again and he can have access to all the features that we provide to the user.
+        
+      iii. After signing in the user has the option to select the route for which he wants to book the ticket. The user has the option to enter a starting station, a destination station and the date on which he wishes to travel.
+        
+      iv. After submitting the response the user gets redirected to a page which displays all the trains which will make the travel according to the information provided by the user. The user has the option to book any of the available trains.
   
     
 #### (2) ADMIN SIDE:-
 
-Once the admin logs into the application then he will be displayed a page in which he will have the following options:-
+   Once the admin logs into the application then he will be displayed a page in which he will have the following options:-
      
-   i. Add Route into Train Network
+      i. Add Route into Train Network
+        
+      ii. Add New Trains into Train Network
+        
+      iii. Display all the Passengers traveling in a particular Train (4)Sort all the stations in lexicographical order
      
-   ii. Add New Trains into Train Network
-     
-   iii. Display all the Passengers traveling in a particular Train (4)Sort all the stations in lexicographical order
-  
 
 ### Database Features
 
