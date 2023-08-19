@@ -1,0 +1,52 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+section {
+ 
+display: flex;
+flex-direction: column;
+  }
+  
+  section::before,
+
+  
+  section::before {
+    width: 30px;
+    height: 30px;
+  
+    background: var(--primary);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  
+    top: 18px;
+    left: 18px;
+  }
+  
+  section::after {
+    width: 42px;
+    height: 42px;
+  
+    border: 1px solid var(--primary);
+  
+    top: 11px;
+    left: 11px;
+  }
+  
+  .light {
+    --primary: hsl(250, 100%, 44%);
+    --other: hsl(0, 0%, 14%);
+  
+
+  }
+
+  .gender{
+      display: flex;
+      align-items: center;
+      margin: 10px;
+  }
+  .container{
+      width: 50%;
+      margin-top: 30px;
+  }
+  .submitButton{
+    background-color: black;
+    color: white;
+    margin: 10px;
+  }

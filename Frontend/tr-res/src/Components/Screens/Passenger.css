@@ -1,0 +1,16 @@
+body{
+    margin: 0
+}
+.card{
+    
+    padding: 20px;
+}
+.add{
+    margin-top: 20px;
+}
+.header{
+    height: 80px;
+}
+::placeholder{
+    color: black;
+}
