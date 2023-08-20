@@ -29,7 +29,10 @@ ARSH GUPTA, AMAN KUMAR, PRIYANSHU, ABHINN YADAV
 1. The stakeholders or the people which will be affected by this application will be the people who are willing to travel by train.
    
 2. This will also affect the people working in train stations, ticket collectors, train drivers and train station officials.
-   
+
+### ER Formulation
+<img width="1276" alt="image" src="https://github.com/Aman281201/IRCTC-Train-Reservation-portal/assets/74315059/73b99fe5-2ab7-4d19-9ba7-c1ca9b12b9d1">
+
 
 ### Features
 
@@ -80,13 +83,9 @@ ARSH GUPTA, AMAN KUMAR, PRIYANSHU, ABHINN YADAV
    • check the ticket status
    
    • show the booked tickets by a particular user
-   
+
    • show passenger list of a particular train
 
-
-
-### ER Formulation
-<img width="1276" alt="image" src="https://github.com/Aman281201/IRCTC-Train-Reservation-portal/assets/74315059/73b99fe5-2ab7-4d19-9ba7-c1ca9b12b9d1">
 
 ### Web Interface
 <img width="646" alt="image" src="https://github.com/Aman281201/IRCTC-Train-Reservation-portal/assets/74315059/a2d9c2a1-b2a3-4028-abc8-1587fcfb9d9a">
